@@ -264,7 +264,7 @@ const[cal,setCal]=useState('2500');
       </ThemeProvider>
     </>
     :
-    <div style={{backgroundColor:"#121010",width:"100vw",height:"100vh",display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'10rem'}}>
+    <div style={{backgroundColor:"#121010",width:"100vw",height:"100vh",display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'2rem'}}>
       <img src={logoo} style={{width:"170px"}}></img>
       <div style={{color:"white",fontWeight:"700",fontSize:"60px",textAlign:'justify'}}>PERSONAL HEALTH MANAGEMENT SYSTEM </div>
       <div style={{color:"white",fontWeight:"700",fontSize:"60px"}}>
