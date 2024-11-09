@@ -67,7 +67,7 @@
 		"twilio": "^3.82.0",
 		"universal-cookie": "^4.0.3",
 		"uuid": "8.3.2",
-		"web-vitals": "1.0.1",
+		"web-vitals": "1.0.1"
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-private-property-in-object" : "^1.00"
