@@ -113,17 +113,21 @@ function DashboardNavbar({ absolute, light, isMini }) {
       sx={{ mt: 2 }}
     >
       <NotificationItem
-        image={<img src={team2} alt="person" />}
-        title={["New message", "from Laur"]}
+        image={
+          <Icon fontSize="small" sx={{ color: ({ palette: { white } }) => white.main }}>
+            payment
+          </Icon>
+        }
+        title={["New message", "from Naved"]}
         date="13 minutes ago"
         onClick={handleCloseMenu}
       />
-      <NotificationItem
+      {/* <NotificationItem
         image={<img src={logoSpotify} alt="person" />}
         title={["New album", "by Travis Scott"]}
         date="1 day"
         onClick={handleCloseMenu}
-      />
+      /> */}
       <NotificationItem
         color="text"
         image={

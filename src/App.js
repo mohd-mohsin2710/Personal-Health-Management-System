@@ -248,7 +248,7 @@ const[cal,setCal]=useState('2500');
             <Sidenav
               color={sidenavColor}
               brand=""
-              brandName="HEALTH TRACKER"
+              brandName="PERSONAL HEALTH "
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}

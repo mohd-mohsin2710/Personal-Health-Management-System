@@ -127,10 +127,10 @@ function Header() {
               })}
             >
               <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Vidita
+                Mohsin
               </VuiTypography>
               <VuiTypography variant="button" color="text" fontWeight="regular">
-                vid@simmmple.com
+              gm2897@myamu.ac.in
               </VuiTypography>
             </VuiBox>
           </Grid>
