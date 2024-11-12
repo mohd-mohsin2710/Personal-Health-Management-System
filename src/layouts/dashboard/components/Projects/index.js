@@ -86,9 +86,9 @@ function Projects() {
   const [ remindAt, setRemindAt ] = useState()
   const [ reminderList, setReminderList ] = useState([])
 
-  useEffect(() => {
-      axios.get("http://localhost:9000/getAllReminder").then( res => setReminderList(res.data))
-  }, [])
+  // useEffect(() => {
+  //     axios.get("http://localhost:9000/getAllReminder").then( res => setReminderList(res.data))
+  // }, [])
 
   const avatars = (Time) =>
   Time.map(([image, name]) => (

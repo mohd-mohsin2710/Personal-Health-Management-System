@@ -59,24 +59,25 @@ function Tables(props) {   ///////////////////////////////////chacnged from {cal
     console.log("CALORIES EATEN YESTERDAY=",props.cal);
     console.log("MIN CALORIES TO BE EATEN=",minCal);
 
-    function getMealData() {
-      var minCal=parseInt(props.cal)>2000?props.cal:parseInt(props.cal)+2000;
-      console.log("CALORIES EATEN YESTERDAY=",props.cal);
-      console.log("MIN CALORIES TO BE EATEN=",minCal);
-      setCalories(`${minCal}`);
-      fetch(
-        `https://api.spoonacular.com/mealplanner/generate?apiKey=6108d1daaf3c4778b47d1d120303bafd&timeFrame=day&targetCalories=${props.cal}`
-      )
-        .then((response) => response.json())
-        .then((data) => { 
-          //var datee=new Date().getDay();console.log("date=",datee);
-          //setCalories(extractElement(weekData, 'Calories')[datee-1]);//ADDED THIS TO MEAL PLANNNER*******
-          //console.log("EXTRACTED+",extractElement(weekData, 'Calories')[datee-1]);               //RETURNS AN ARRAY FROM 0-6******
-          setMealData(data);})
-        .catch(() => {
-          console.log("error");
-        });
-    }
+    // function getMealData() {
+    //   var minCal=parseInt(props.cal)>2000?props.cal:parseInt(props.cal)+2000;
+    //   console.log("CALORIES EATEN YESTERDAY=",props.cal);
+    //   console.log("MIN CALORIES TO BE EATEN=",minCal);
+    //   setCalories(`${minCal}`);
+    //   fetch(
+    //     `https://api.spoonacular.com/mealplanner/generate?apiKey=6108d1daaf3c4778b47d1d120303bafd&timeFrame=day&targetCalories=${props.cal}`
+    //   )
+    //     .then((response) => response.json())
+    //     .then((data) => { 
+    //       //var datee=new Date().getDay();console.log("date=",datee);
+    //       //setCalories(extractElement(weekData, 'Calories')[datee-1]);//ADDED THIS TO MEAL PLANNNER*******
+    //       //console.log("EXTRACTED+",extractElement(weekData, 'Calories')[datee-1]);               //RETURNS AN ARRAY FROM 0-6******
+    //       console.log(data)
+    //       setMealData(data);})
+    //     .catch(() => {
+    //       console.log("error");
+    //     });
+    // }
 
   const { columns, rows } = authorsTableData;
   const { columns: prCols, rows: prRows } = projectsTableData;
@@ -108,7 +109,7 @@ function Tables(props) {   ///////////////////////////////////chacnged from {cal
          Consume a minimum of {minCal} calories for energizing yourself
          </VuiTypography>               
          <br></br>
-        <button onClick={getMealData} className="MealButton">Get Daily Meal Plan</button>
+        {/* <button onClick={getMealData} className="MealButton">Get Daily Meal Plan</button> */}
       </section>
       {mealData && <MealList mealData={mealData} />}
               </VuiTypography>
